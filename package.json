@@ -4,7 +4,7 @@
   "description": "carousel component for fec project",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js --open --hot",
+    "start": "webpack-dev-server --config webpack.config.js --open --hot -w",
     "build": "webpack --config webpack.config.js"
   },
   "repository": "https://github.com/HRATX49-BestBuy/carousel-jedwards.git",
@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "hooks": "^0.3.2",
     "node": "^14.4.0",
+    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

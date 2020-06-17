@@ -7,7 +7,7 @@ const SuggestedItem = () => {
     return (
 
         <div>
-            <h1>Here is a current Item</h1>
+            
         </div>
     )
 }
