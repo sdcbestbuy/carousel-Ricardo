@@ -1,17 +1,23 @@
-// Load the plugin in your webpack.config.js file.
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-
 module.exports = {
+  entry: "./src/index.js",
+  mode: 'development',
+  output: {
+    filename: "bundle.js"
+  }, 
+  watch: true,
   module: {
     rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
         }
       },
-      // Add HTML loader to serve HTML files.
       {
         test: /\.html$/,
         use: [
@@ -21,12 +27,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  // Call the Plugin here.
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./public/index.html",
-      filename: "./index.html"
-    })
-  ]
+  }
 };
