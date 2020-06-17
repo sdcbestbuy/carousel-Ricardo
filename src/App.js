@@ -14,7 +14,7 @@ const App = () => {
                 <p>item name</p>
                 <span>reviews</span>
                 <p>price</p>
-                <div type="select">compare</div>
+                <div type="select">compare stuff</div>
             </div>
         </div>
     )
