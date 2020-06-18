@@ -16,7 +16,7 @@ const App = () => {
 {/* this is the individual item components */}
             <li>
               <div className="imageHalf">
-                <img className="itemImage" src="./dist/assets/switch.jpg"></img>
+                <img className="itemImage" src="./assets/switch.jpg"></img>
                 <div className="imageDivFiller"></div>
                 
               </div>
