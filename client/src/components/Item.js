@@ -11,10 +11,16 @@ const Item = (props) => {
                 <img className="itemImage" src={props.data.image}></img>
             </div>
             <div className="infoHalf">
-                <h3>{props.data.name}</h3>
-                <h3>{props.data.rating}</h3>
-                <h5>{props.data.price}</h5>
-                <div type="radio">compare</div>
+                <p className="itemName">{props.data.name}</p>
+                <ul className="itemRating">
+                    <i className="stars"></i>
+                    <span>{props.data.rating}</span>
+                </ul>
+                <p className="itemPrice">{props.data.price}</p>
+                <div type="itemCompare">
+                    <input type="checkbox"></input>
+                    <label>compare</label>
+                </div>
             </div>
         </div>
     )

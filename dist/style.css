@@ -31,8 +31,27 @@ body {
 
 .itemBlock {
 
-    display: flex;
-    flex-direction: row;
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    column-gap:15px;
+    display:grid;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    grid-template-areas:"image title" "image review" "image price" "image compare" "image a2c";
+    grid-template-columns:95px 137.328px;
+    grid-template-rows:48px 22px 36.5938px 31px 0px;
+    height:169.594px;
+    line-height:normal;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    row-gap:8px;
+    text-align:left;
+    text-size-adjust:100%;
+    visibility:visible;
+    white-space:normal;
+    width:247.328px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
 .imageHalf {
@@ -43,7 +62,235 @@ body {
 
 .itemImage {
 
-    max-width: 95px;
-    max-height: 95px;
+    border-bottom-color:rgb(4, 87, 200);
+    border-bottom-style:none;
+    border-bottom-width:0px;
+    border-image-outset:0px;
+    border-image-repeat:stretch;
+    border-image-slice:100%;
+    border-image-source:none;
+    border-image-width:1;
+    border-left-color:rgb(4, 87, 200);
+    border-left-style:none;
+    border-left-width:0px;
+    border-right-color:rgb(4, 87, 200);
+    border-right-style:none;
+    border-right-width:0px;
+    border-top-color:rgb(4, 87, 200);
+    border-top-style:none;
+    border-top-width:0px;
+    box-sizing:border-box;
+    color:rgb(4, 87, 200);
+    cursor:pointer;
+    display:inline;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height: 95px;
+    line-height:normal;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    max-height:95px;
+    max-width:95px;
+    text-align:left;
+    text-size-adjust:100%;
+    vertical-align:middle;
+    visibility:visible;
+    white-space:normal;
+    width:95px;
+
 }
 
+.infoHalf {
+
+    padding: 5px;
+    margin: 5px;
+}
+
+.itemName {
+
+    box-sizing:border-box;
+    color:rgb(4, 87, 200);
+    cursor:pointer;
+    display:block;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:48px;
+    line-height:normal;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    max-height:48px;
+    text-align:left;
+    text-size-adjust:100%;
+    visibility:visible;
+    white-space:normal;
+    width:137.328px;
+}
+
+.stars {
+
+    background-image:url(https://www.bestbuy.com/~assets/bby/_com/sc-pattern-library/3.4.1/dist/d2fb7b9….png);
+    background-position-x:-100px;
+    background-position-y:-142px;
+    background-repeat-x:;
+    background-repeat-y:;
+    box-sizing:border-box;
+    color:rgb(4, 87, 200);
+    cursor:pointer;
+    display:block;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-style:italic;
+    height:14px;
+    line-height:normal;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-right:4px;
+    position:relative;
+    text-align:left;
+    text-size-adjust:100%;
+    visibility:visible;
+    white-space:normal;
+    width:71px;
+}
+
+.itemRating {
+
+    align-items:center;
+    box-sizing:border-box;
+    color:rgb(0, 70, 190);
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:22px;
+    line-height:normal;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-block-end:0px;
+    margin-block-start:0px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-top:0px;
+    padding-inline-start:0px;
+    padding-left:0px;
+    text-align:left;
+    text-size-adjust:100%;
+    visibility:visible;
+    white-space:normal;
+    width:137.328px;
+
+}
+
+.itemPrice {
+
+    box-sizing:border-box;
+    color:rgb(29, 37, 44);
+    display:inline;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-stretch:100%;
+    font-style:normal;
+    font-weight:500;
+    height: auto;
+    line-height:18px;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    text-align:left;
+    text-size-adjust:100%;
+    visibility:visible;
+    white-space:normal;
+}
+
+.itemCompare {
+
+    align-items:center;
+    box-sizing:border-box;
+    color:rgb(0, 70, 190);
+    display:flex;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:31px;
+    line-height:normal;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    text-align:left;
+    text-size-adjust:100%;
+    visibility:visible;
+    white-space:normal;
+    width:137.328px;
+}
+
+label {
+
+    align-items:center;
+    box-sizing:border-box;
+    color:rgb(0, 70, 190);
+    cursor:pointer;
+    display:flex;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    font-weight:400;
+    height:31px;
+    line-height:13px;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    max-width:100%;
+    padding-bottom:8px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:7px;
+    text-align:left;
+    text-size-adjust:100%;
+    visibility:visible;
+    white-space:normal;
+    width:77.0938px;
+}
+
+input {
+
+    background-image:linear-gradient(135deg, rgb(255, 255, 255), rgb(255, 255, 255) 50%, rgb(224, 230, 239) 0px, rgb(224, 230, 239));
+    border-bottom-color:rgb(85, 85, 90);
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    border-bottom-style:solid;
+    border-bottom-width:2px;
+    border-image-outset:0px;
+    border-image-repeat:stretch;
+    border-image-slice:100%;
+    border-image-source:none;
+    border-image-width:1;
+    border-left-color:rgb(85, 85, 90);
+    border-left-style:solid;
+    border-left-width:1px;
+    border-right-color:rgb(85, 85, 90);
+    border-right-style:solid;
+    border-right-width:1px;
+    border-top-color:rgb(85, 85, 90);
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    border-top-style:solid;
+    border-top-width:1px;
+    bottom:0px;
+    box-sizing:border-box;
+    content:"";
+    display:block;
+    height:16px;
+    left:0px;
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:16px;
+}
