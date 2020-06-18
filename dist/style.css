@@ -1,10 +1,49 @@
 body {
 
-    background-color: red;
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    justify-content: start; 
+    align-items: flex-start; 
+}
+
+.carouselContainer {
+
+    height: 125px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: start; 
+    align-items: flex-start;  
+}
+
+.carousel {
+
+    display: flex;
+    flex-direction: row; 
+    justify-content: start; 
+    align-items: flex-start; 
 }
 
 .itemContainer {
 
-    flex-direction: 'row';
+    display: flex;
+}
+
+.itemBlock {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.imageHalf {
+
+    max-width: 95px;
+    max-height: 95px;
+}
+
+.itemImage {
+
+    max-width: 95px;
+    max-height: 95px;
 }
 

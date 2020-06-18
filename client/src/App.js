@@ -3,7 +3,6 @@ import ItemCarousel from './components/ItemCarousel';
 import data from '../../dummyData';
 
 const App = () => {
-
   return (
 
     <div id="carouselContainer">
