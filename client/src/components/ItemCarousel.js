@@ -30,8 +30,6 @@ const ItemCarousel = (props) => {
         setCarouselData(props.data.slice(index, index + 3))
     }
 
-    console.log(carouselData)
-
     return (
         <div className="carouselContainer">
             <div className="carouselHeader">

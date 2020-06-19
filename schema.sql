@@ -14,3 +14,4 @@ CREATE TABLE items (
   shortDescription VARCHAR(240),
   thumbnailImage VARCHAR(240)
 );
+

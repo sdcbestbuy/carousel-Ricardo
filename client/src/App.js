@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import ItemCarousel from './components/ItemCarousel';
-import data from '../../dummyData';
-import realData from '../../bestBuyScrape';
+import data from '../../bestBuyScrape';
+// import data from '../../dummyData';
 
-console.log(realData);
+console.log(data);
 
 const App = () => {
 
