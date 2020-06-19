@@ -1,25 +1,23 @@
-import connection from './index';
-import data from '../bestBuyScrape';
+// import connection from './index';
+const {connection} = require('./index');
 
-console.log(data);
-let reviewCount = data.customerReviewCountl;
-let image = data.image;
-let name = data.name;
-let price = data.regularPrice;
-let description = data.shortDescription;
-let thumbnail = data.thumbnailImage;
+const seedDatabase = (reviewCount, image, name, price, description, thumbnail, callback) => {
 
+    connection.query('INSERT INTO items (customerReviewCount, image, name, regularPrice, thumbnailImage) VALUES (?, ?, ?, ?, ?)',[reviewCount, image, name, price, description, thumbnail],  (error, result) => {
 
-const seedDatabase = (name, price, description, image, thumbnail, reviewCount) => {
-
-    connection.query('INSERT INTO items VALUES (?, ?, ?, ?, ?, ?)')
+        if (error) {
+            console.error('error with query', error);
+            // callback(error, null);
+        } else {
+            console.log('query successful')
+            // callback(null, result);
+        }
+    })
 }
 
-data.forEach( item => {
-
-    seedDatabase(name, price, description, image, thumbnail, reviewCount);
-})
-
+module.exports = {
+    seedDatabase
+}
 
 // {
 //     "customerReviewAverage": 1,
