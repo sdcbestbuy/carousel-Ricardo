@@ -12,7 +12,7 @@ let thumbnail = data.thumbnailImage;
 
 const seedDatabase = (name, price, description, image, thumbnail, reviewCount) => {
 
-    connection.query('INSERT INTO product VALUES (?, ?, ?, ?, ?, ?)')
+    connection.query('INSERT INTO items VALUES (?, ?, ?, ?, ?, ?)')
 }
 
 data.forEach( item => {
