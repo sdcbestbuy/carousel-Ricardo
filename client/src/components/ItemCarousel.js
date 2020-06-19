@@ -33,16 +33,25 @@ const ItemCarousel = (props) => {
     console.log(carouselData)
 
     return (
-        <div className="carousel">
-            <button onClick={() => previousItems(3)}></button>
-            <div className="carousel">
-                {carouselData.map((item, i) => {
-                    return (
-                        <Item key={i} data={item}/>
-                    )
-                })}
+        <div className="carouselContainer">
+            <div className="carouselHeader">
+                <h2>People also viewed<span className="xItems">(15 items)</span></h2>
             </div>
-            <button onClick={() => nextItems(3)}></button>
+            <div className="bottomLine"></div>
+            <div className="carousel">
+                <button className="previousButton" onClick={() => previousItems(3)}>
+                    <svg className="svgLeft"><path className="pathLeft"></path></svg>
+                </button>
+                    {carouselData.map((item, i) => {
+                        return (
+
+                            <Item key={i} data={item}/>
+                        )
+                    })}
+                <button className="nextButton" onClick={() => nextItems(3)}>
+                    <svg className="svgRight"><path className="pathRight"></path></svg>
+                </button>
+            </div>
         </div>
 
     )

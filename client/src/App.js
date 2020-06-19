@@ -5,7 +5,7 @@ import data from '../../dummyData';
 const App = () => {
   return (
 
-    <div id="carouselContainer">
+    <div className="mainContainer">
       <ItemCarousel data={data.data}/>
     </div>
   )

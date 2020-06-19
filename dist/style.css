@@ -3,30 +3,494 @@ body {
     background-color: white;
     display: flex;
     flex-direction: row; 
-    justify-content: start; 
+    justify-content: center; 
     align-items: flex-start; 
+}
+
+#root {
+
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    display:block;
+    float:left;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:336.594px;
+    line-height:normal;
+    min-height:1px;
+    padding-left:15px;
+    padding-right:15px;
+    position:relative;
+    text-size-adjust:100%;
+    width:992px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+#mainContainer {
+
+    justify-content: center;
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    display:block;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:272.594px;
+    line-height:normal;
+    min-width:730px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    padding-bottom:0px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:0px;
+    text-size-adjust:100%;
+    width:962px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+h2 {
+
+    align-items: ;
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    display:flex;
+    float:left;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:500;
+    height:54px;
+    line-height:normal;
+    margin-block-end:0px;
+    margin-block-start:0px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    min-height:54px;
+    padding-bottom:15px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:15px;
+    text-size-adjust:100%;
+    width:776.656px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.xItems {
+
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    display:inline;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:300;
+    height:auto;
+    line-height:normal;
+    text-size-adjust:100%;
+    width:auto;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.bottomLine {
+
+    border-bottom-color:rgb(197, 203, 213);
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-image-outset:0px;
+    border-image-repeat:stretch;
+    border-image-slice:100%;
+    border-image-source:none;
+    border-image-width:1;
+    border-left-color:rgb(197, 203, 213);
+    border-left-style:solid;
+    border-left-width:0px;
+    border-right-color:rgb(197, 203, 213);
+    border-right-style:solid;
+    border-right-width:0px;
+    border-top-color:rgb(197, 203, 213);
+    border-top-style:solid;
+    border-top-width:0px;
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    display:block;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:1px;
+    line-height:normal;
+    text-size-adjust:100%;
+    width:932px;
+    margin-bottom: 15px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.carouselHeader {
+
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    display:block;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:54px;
+    line-height:normal;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    text-size-adjust:100%;
+    width:932px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
 .carouselContainer {
 
-    height: 125px;
-    display: flex;
-    flex-direction: row; 
-    justify-content: start; 
-    align-items: flex-start;  
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    display:block;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:257.594px;
+    line-height:normal;
+    text-size-adjust:100%;
+    width:932px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.previousButton {
+
+    align-items:flex-start;
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-color:rgba(0, 0, 0, 0);
+    background-image:none;
+    background-origin:padding-box;
+    background-position-x:0%;
+    background-position-y:0%;
+    background-repeat-x:;
+    background-repeat-y:;
+    background-size:auto;
+    border-bottom-color:rgb(4, 12, 19);
+    border-bottom-style:none;
+    border-bottom-width:0px;
+    border-image-outset:0px;
+    border-image-repeat:stretch;
+    border-image-slice:100%;
+    border-image-source:none;
+    border-image-width:1;
+    border-left-color:rgb(4, 12, 19);
+    border-left-style:none;
+    border-left-width:0px;
+    border-right-color:rgb(4, 12, 19);
+    border-right-style:none;
+    border-right-width:0px;
+    border-top-color:rgb(4, 12, 19);
+    border-top-style:none;
+    border-top-width:0px;
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    cursor:pointer;
+    display:block;
+    fill:rgb(0, 70, 190);
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:50px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    height:56px;
+    left:0px;
+    letter-spacing:normal;
+    line-height:50px;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:-25px;
+    overflow-x:visible;
+    overflow-y:visible;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    position:absolute;
+    text-align:center;
+    text-indent:0px;
+    text-rendering:auto;
+    text-shadow:none;
+    text-size-adjust:100%;
+    text-transform:none;
+    top:91.2969px;
+    transition-delay:0s;
+    transition-duration:0.2s;
+    transition-property:color;
+    transition-timing-function:ease;
+    width:50px;
+    word-spacing:0px;
+    writing-mode:horizontal-tb;
+    -webkit-appearance:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-border-image:none;
+}
+
+.svgRight {
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    cursor:pointer;
+    display:inline-block;
+    fill:rgb(0, 70, 190);
+    font-family:bbyicons;
+    font-size:50px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    height:50px;
+    letter-spacing:normal;
+    line-height:50px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    text-align:center;
+    text-indent:0px;
+    text-rendering:auto;
+    text-shadow:none;
+    text-size-adjust:100%;
+    text-transform:none;
+    width:50px;
+    word-spacing:0px;
+    writing-mode:horizontal-tb;
+    -webkit-font-smoothing:antialiased;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.pathRight {
+
+    color:rgb(4, 12, 19);
+    cursor:pointer;
+    d:path("M 11.385 29.319 A 0.979 0.979 0 0 1 10.605 27.753 L 19.459 16.003 L 10.605 4.255 A 0.979 0.979 0 0 1 12.167 3.078 L 21.463 15.415 A 0.98 0.98 0 0 1 21.463 16.592 L 12.167 28.93 A 0.977 0.977 0 0 1 11.385 29.319");
+    display:inline;
+    fill:rgb(0, 70, 190);
+    font-family:bbyicons;
+    font-size:50px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    height:auto;
+    letter-spacing:normal;
+    line-height:50px;
+    text-align:center;
+    text-indent:0px;
+    text-rendering:auto;
+    text-shadow:none;
+    text-size-adjust:100%;
+    text-transform:none;
+    transform-origin:0px 0px;
+    width:auto;
+    word-spacing:0px;
+    writing-mode:horizontal-tb;
+    -webkit-font-smoothing:antialiased;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.nextButton {
+
+    align-items:flex-start;
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-color:rgba(0, 0, 0, 0);
+    background-image:none;
+    background-origin:padding-box;
+    background-position-x:0%;
+    background-position-y:0%;
+    background-repeat-x:;
+    background-repeat-y:;
+    background-size:auto;
+    border-bottom-color:rgb(4, 12, 19);
+    border-bottom-style:none;
+    border-bottom-width:0px;
+    border-image-outset:0px;
+    border-image-repeat:stretch;
+    border-image-slice:100%;
+    border-image-source:none;
+    border-image-width:1;
+    border-left-color:rgb(4, 12, 19);
+    border-left-style:none;
+    border-left-width:0px;
+    border-right-color:rgb(4, 12, 19);
+    border-right-style:none;
+    border-right-width:0px;
+    border-top-color:rgb(4, 12, 19);
+    border-top-style:none;
+    border-top-width:0px;
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    cursor:pointer;
+    display:block;
+    fill:rgb(0, 70, 190);
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:50px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    height:56px;
+    letter-spacing:normal;
+    line-height:50px;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:-25px;
+    overflow-x:visible;
+    overflow-y:visible;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    position:absolute;
+    right:0px;
+    text-align:center;
+    text-indent:0px;
+    text-rendering:auto;
+    text-shadow:none;
+    text-size-adjust:100%;
+    text-transform:none;
+    top:91.2969px;
+    transition-delay:0s;
+    transition-duration:0.2s;
+    transition-property:color;
+    transition-timing-function:ease;
+    width:50px;
+    word-spacing:0px;
+    writing-mode:horizontal-tb;
+    -webkit-appearance:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-border-image:none;
+}
+
+.svgLeft {
+
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    cursor:pointer;
+    display:inline-block;
+    fill:rgb(0, 70, 190);
+    font-family:bbyicons;
+    font-size:50px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    height:50px;
+    letter-spacing:normal;
+    line-height:50px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    text-align:center;
+    text-indent:0px;
+    text-rendering:auto;
+    text-shadow:none;
+    text-size-adjust:100%;
+    text-transform:none;
+    width:50px;
+    word-spacing:0px;
+    writing-mode:horizontal-tb;
+    -webkit-font-smoothing:antialiased;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.pathLeft {
+
+    color:rgb(4, 12, 19);
+    cursor:pointer;
+    d:path("M 20.679 29.347 A 0.977 0.977 0 0 1 19.897 28.959 L 10.6 16.62 A 0.98 0.98 0 0 1 10.6 15.442 L 19.897 3.105 A 0.977 0.977 0 1 1 21.459 4.282 L 12.605 16.032 L 21.46 27.78 A 0.979 0.979 0 0 1 20.68 29.346");
+    display:inline;
+    fill:rgb(0, 70, 190);
+    font-family:bbyicons;
+    font-size:50px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    height:auto;
+    letter-spacing:normal;
+    line-height:50px;
+    text-align:center;
+    text-indent:0px;
+    text-rendering:auto;
+    text-shadow:none;
+    text-size-adjust:100%;
+    text-transform:none;
+    transform-origin:0px 0px;
+    width:auto;
+    word-spacing:0px;
+    writing-mode:horizontal-tb;
+    -webkit-font-smoothing:antialiased;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
 .carousel {
 
-    display: flex;
-    flex-direction: row; 
-    justify-content: start; 
-    align-items: flex-start; 
+    justify-content: center;
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    display:flex;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:182.594px;
+    line-height:normal;
+    margin-bottom:15px;
+    position:relative;
+    text-size-adjust:100%;
+    width:932px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
 .itemContainer {
 
-    display: flex;
+    box-sizing:border-box;
+    color:rgb(4, 12, 19);
+    display:inline-block;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:169.594px;
+    line-height:normal;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-left:0px;
+    padding-bottom:0px;
+    padding-left:15px;
+    padding-right:0px;
+    padding-top:0px;
+    text-align:left;
+    text-size-adjust:100%;
+    vertical-align:top;
+    visibility:visible;
+    white-space:normal;
+    width:277.328px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
 .itemBlock {
@@ -54,12 +518,6 @@ body {
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-.imageHalf {
-
-    max-width: 95px;
-    max-height: 95px;
-}
-
 .itemImage {
 
     border-bottom-color:rgb(4, 87, 200);
@@ -85,7 +543,7 @@ body {
     display:inline;
     font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
     font-size:13px;
-    height: 95px;
+    height:76px;
     line-height:normal;
     list-style-image:none;
     list-style-position:outside;
@@ -94,23 +552,19 @@ body {
     max-width:95px;
     text-align:left;
     text-size-adjust:100%;
+    100%html
     vertical-align:middle;
     visibility:visible;
     white-space:normal;
     width:95px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 
-}
-
-.infoHalf {
-
-    padding: 5px;
-    margin: 5px;
 }
 
 .itemName {
 
     box-sizing:border-box;
-    color:rgb(4, 87, 200);
+    color:rgb(0, 30, 115);
     cursor:pointer;
     display:block;
     font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
@@ -123,40 +577,14 @@ body {
     max-height:48px;
     text-align:left;
     text-size-adjust:100%;
+    100%html
     visibility:visible;
     white-space:normal;
     width:137.328px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-.stars {
-
-    background-image:url(https://www.bestbuy.com/~assets/bby/_com/sc-pattern-library/3.4.1/dist/d2fb7b9….png);
-    background-position-x:-100px;
-    background-position-y:-142px;
-    background-repeat-x:;
-    background-repeat-y:;
-    box-sizing:border-box;
-    color:rgb(4, 87, 200);
-    cursor:pointer;
-    display:block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
-    font-size:11px;
-    font-style:italic;
-    height:14px;
-    line-height:normal;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    margin-right:4px;
-    position:relative;
-    text-align:left;
-    text-size-adjust:100%;
-    visibility:visible;
-    white-space:normal;
-    width:71px;
-}
-
-.itemRating {
+.reviewBox {
 
     align-items:center;
     box-sizing:border-box;
@@ -184,7 +612,84 @@ body {
     visibility:visible;
     white-space:normal;
     width:137.328px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
 
+.stars {
+
+    background-image:url(https://www.bestbuy.com/~assets/bby/_com/sc-pattern-library/3.4.1/dist/d2fb7b9….png);
+    background-position-x:-100px;
+    background-position-y:-142px;
+    background-repeat-x:;
+    background-repeat-y:;
+    box-sizing:border-box;
+    color:rgb(4, 87, 200);
+    cursor:pointer;
+    display:block;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-style:italic;
+    height:14px;
+    line-height:normal;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-right:4px;
+    position:relative;
+    text-align:left;
+    text-size-adjust:100%;
+    100%html
+    visibility:visible;
+    white-space:normal;
+    width:71px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.itemRating {
+
+    box-sizing:border-box;
+    color:rgb(4, 87, 200);
+    cursor:pointer;
+    display:inline;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:11px;
+    height:auto;
+    line-height:normal;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    text-align:left;
+    text-size-adjust:100%;
+    100%html
+    visibility:visible;
+    white-space:normal;
+    width:auto;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+
+}
+
+#itemPrice {
+
+    box-sizing:border-box;
+    color:rgb(29, 37, 44);
+    display:block;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-stretch:100%;
+    font-style:normal;
+    font-weight:500;
+    height:18px;
+    line-height:18px;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    text-align:left;
+    text-size-adjust:100%;
+    vertical-align:middle;
+    visibility:visible;
+    white-space:normal;
+    width:137.328px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
 .itemPrice {
@@ -197,7 +702,7 @@ body {
     font-stretch:100%;
     font-style:normal;
     font-weight:500;
-    height: auto;
+    height:auto;
     line-height:18px;
     list-style-image:none;
     list-style-position:outside;
@@ -206,17 +711,18 @@ body {
     text-size-adjust:100%;
     visibility:visible;
     white-space:normal;
+    width:auto;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-.itemCompare {
+#itemPriceDiscount {
 
-    align-items:center;
     box-sizing:border-box;
-    color:rgb(0, 70, 190);
-    display:flex;
+    color:rgb(4, 12, 19);
+    display:block;
     font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
     font-size:13px;
-    height:31px;
+    height:18.5938px;
     line-height:normal;
     list-style-image:none;
     list-style-position:outside;
@@ -226,9 +732,68 @@ body {
     visibility:visible;
     white-space:normal;
     width:137.328px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-label {
+.itemPriceDiscount {
+
+    box-sizing:border-box;
+    color:rgb(29, 37, 44);
+    display:inline;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-stretch:100%;
+    font-style:normal;
+    font-weight:400;
+    height:auto;
+    line-height:18px;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    text-align:left;
+    text-size-adjust:100%;
+    100%html
+    visibility:visible;
+    white-space:normal;
+    width:auto;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+#itemCompare {
+
+    align-items:center;
+    box-sizing:border-box;
+    color:rgb(0, 70, 190);
+    cursor:pointer;
+    display:flex;
+    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    font-weight:400;
+    height:31px;
+    line-height:13px;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    max-width:100%;
+    padding-bottom:8px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:7px;
+    text-align:left;
+    text-size-adjust:100%;
+    100%html
+    visibility:visible;
+    white-space:normal;
+    width:77.0938px;
+    -webkit-box-align:center;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.compareLabel {
 
     align-items:center;
     box-sizing:border-box;
@@ -257,9 +822,11 @@ label {
     visibility:visible;
     white-space:normal;
     width:77.0938px;
+    -webkit-box-align:center;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-input {
+.checkbox {
 
     background-image:linear-gradient(135deg, rgb(255, 255, 255), rgb(255, 255, 255) 50%, rgb(224, 230, 239) 0px, rgb(224, 230, 239));
     border-bottom-color:rgb(85, 85, 90);
