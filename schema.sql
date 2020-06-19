@@ -7,12 +7,12 @@ USE products;
 CREATE TABLE product (
   id int NOT NULL AUTO_INCREMENT,
   customerReviewCount INT,
-  image VARCHAR(255),
-  name VARCHAR(255),
+  image VARCHAR(240),
+  name VARCHAR(240),
   regularPrice INT,
-  shortDescription VARCHAR(255),
-  thumbnailImage VARCHAR(255),
-  url VARCHAR(255),
+  shortDescription VARCHAR(240),
+  thumbnailImage VARCHAR(240),
+  url VARCHAR(240),
 );
 
 INSERT INTO product (id, customerReviewCount, image, name, regularPrice, shortDescription, thumbnailImage, url) 
