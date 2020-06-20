@@ -1,33 +1,35 @@
 import React, {useState} from 'react';
 import Item from './Item';
-import Arrow from './Arrow';
-
+ 
 const ItemCarousel = (props) => {
-    
+
     // index variable for helping to control what items are currently being viewed
-    let index = 0;
-    // controls the current state of items being viewed
-    const [carouselData, setCarouselData] = useState(props.data.slice(index, index + 3));
+    let itemArray = Array.from(props.data);
+
+    const [index, setIndex] = useState(0);
+    const [endex, setEndex] = useState(3);
+    const [carouselData, setCarouselData] = useState(itemArray.slice(index, endex));
+    // const [carouselData, setCarouselData] = useState([]);
 
 //========================================================================
 // functions for controlling the arrow buttons on the side of the carousel
 //========================================================================
-    const nextItems = (numberInIncrementsOfThree) => {
-
-        index = index + numberInIncrementsOfThree;
-        if (index < 0) {
-            index = 0;
+    const nextItems = () => {
+        
+        if (endex <= 97) {
+            setIndex(index + 3);
+            setEndex(endex + 3);
         }
-        setCarouselData(props.data.slice(index, index + 3))
+        setCarouselData(itemArray.slice(index, endex));
     }
 
-    const previousItems = (numberInIncrementsOfThree) => {
+    const previousItems = () => {
 
-        index = index - numberInIncrementsOfThree;
-        if (index < 0) {
-            index = 0;
+        if (index >= 3) {
+            setIndex(index - 3);
+            setEndex(endex - 3);
         }
-        setCarouselData(props.data.slice(index, index + 3))
+        setCarouselData(itemArray.slice(index, endex));
     }
 
     return (
@@ -51,7 +53,6 @@ const ItemCarousel = (props) => {
                 </button>
             </div>
         </div>
-
     )
 }
 

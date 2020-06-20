@@ -1,21 +1,24 @@
 import React, {useState, Component} from 'react';
 import ItemCarousel from './components/ItemCarousel';
-import data from '../../bestBuyScrape';
 import Axios from 'axios';
+import data from '../../bestBuyScrape';
 // import data from '../../dummyData';
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
 
+      products: [data.data[0], data.data[1], data.data[2]]
     }
+
     this.seedDB = this.seedDB.bind(this);
+    this.getProducts = this.getProducts.bind(this);
   }
 
   componentDidMount() {
 
-    this.seedDB();
+    this.getProducts();
+
   }
 
   seedDB() {
@@ -31,12 +34,25 @@ class App extends Component {
       })
   }
 
+  getProducts() {
+
+    Axios.get('/products')
+      .then( res => {
+        let products = res.data;
+        this.setState({products: res.data}, () => console.log('products done gotten', this.state.products));
+      })
+      .catch( err => {
+
+        console.error('error with getting products', err);
+      })
+  }
+
   render() {
 
     return (
       
       <div className="mainContainer">
-        <ItemCarousel data={data.data}/>
+        <ItemCarousel data={this.state.products}/>
       </div>
     )
   }

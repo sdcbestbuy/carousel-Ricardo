@@ -17,13 +17,13 @@ const Item = (props) => {
                     <p className="itemName">{props.data.name}</p>
                     <ul className="reviewBox">
                         <i className="stars"></i>
-                        <span className="itemRating">{props.data.rating}</span>
+                        <span className="itemRating">{props.data.customerReviewCount}</span>
                     </ul>
                     <div id="itemPrice">
-                        <span className="itemPrice">{props.data.price}</span>
+                        <span className="itemPrice">{props.data.regularPrice}</span>
                     </div>
                     <div id="itemPriceDiscount">
-                        <span className="itemPriceDiscount">{props.data.price}</span>
+                        <span className="itemPriceDiscount">{props.data.regularPrice}</span>
                     </div>
                     <div type="itemCompare">
                         <i type="checkbox"></i>

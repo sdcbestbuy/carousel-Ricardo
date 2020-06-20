@@ -15,8 +15,26 @@ const seedDatabase = (reviewCount, image, name, price, description, thumbnail, c
     })
 }
 
+const getProducts = (callback) => {
+
+    connection.query('SELECT * FROM items', (error, result) => {
+
+        if (error) {
+
+            callback(error, null);
+            console.error('error getting products at query level', error);
+        } else {
+
+            callback(null, result);
+        }
+    })
+}
+
+
+
 module.exports = {
-    seedDatabase
+    seedDatabase,
+    getProducts
 }
 
 // {
