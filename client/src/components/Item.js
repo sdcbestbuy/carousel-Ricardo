@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import StarRating from 'react-star-rating';
+import Star from './Star';
 
 const Item = (props) => {
 
@@ -16,8 +16,7 @@ const Item = (props) => {
                 <div>
                     <p className="itemName">{props.data.name}</p>
                     <ul className="reviewBox">
-                        <div className="stars"></div>
-                        <span className="itemRating">{props.data.customerReviewCount}</span>
+                        <Star rating={props.data.customerReviewAverage}/>
                     </ul>
                     <div id="itemPrice">
                         <span className="itemPrice">{props.data.regularPrice}</span>

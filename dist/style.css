@@ -11,9 +11,10 @@ body {
 
     box-sizing:border-box;
     color:rgb(4, 12, 19);
-    display:block;
+    display:flex;
+    justify-content: center;
     float:left;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:336.594px;
     line-height:normal;
@@ -22,29 +23,27 @@ body {
     padding-right:15px;
     position:relative;
     text-size-adjust:100%;
-    width:992px;
+    width:98%;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
 #mainContainer {
 
-    justify-content: center;
-    box-sizing:border-box;
+    justify-content: stretch;
+    /* box-sizing:border-box; */
     color:rgb(4, 12, 19);
-    display:block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    display: block;
+    justify-content: stretch;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:272.594px;
     line-height:normal;
-    min-width:730px;
-    overflow-x:hidden;
-    overflow-y:hidden;
     padding-bottom:0px;
     padding-left:15px;
     padding-right:15px;
     padding-top:0px;
     text-size-adjust:100%;
-    width:962px;
+    width: 100%;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
@@ -55,7 +54,7 @@ h2 {
     color:rgb(4, 12, 19);
     display:flex;
     float:left;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:20px;
     font-weight:500;
     height:54px;
@@ -83,7 +82,7 @@ h2 {
     box-sizing:border-box;
     color:rgb(4, 12, 19);
     display:inline;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:14px;
     font-weight:300;
     height:auto;
@@ -115,12 +114,12 @@ h2 {
     box-sizing:border-box;
     color:rgb(4, 12, 19);
     display:block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:1px;
     line-height:normal;
     text-size-adjust:100%;
-    width:932px;
+    width:1200px;
     margin-bottom: 15px;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
@@ -130,7 +129,7 @@ h2 {
     box-sizing:border-box;
     color:rgb(4, 12, 19);
     display:block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:54px;
     line-height:normal;
@@ -143,7 +142,7 @@ h2 {
     padding-right:0px;
     padding-top:0px;
     text-size-adjust:100%;
-    width:932px;
+    width: 1200px;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
@@ -151,13 +150,15 @@ h2 {
 
     box-sizing:border-box;
     color:rgb(4, 12, 19);
+    align-content: center;
     display:block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:257.594px;
     line-height:normal;
     text-size-adjust:100%;
-    width:932px;
+
+    width: 1200px;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
@@ -196,7 +197,7 @@ h2 {
     cursor:pointer;
     display:block;
     fill:rgb(0, 70, 190);
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:50px;
     font-stretch:100%;
     font-style:normal;
@@ -340,7 +341,7 @@ h2 {
     cursor:pointer;
     display:block;
     fill:rgb(0, 70, 190);
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:50px;
     font-stretch:100%;
     font-style:normal;
@@ -456,14 +457,14 @@ h2 {
     box-sizing:border-box;
     color:rgb(4, 12, 19);
     display:flex;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:182.594px;
     line-height:normal;
     margin-bottom:15px;
     position:relative;
     text-size-adjust:100%;
-    width:932px;
+    width:100%;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
@@ -472,7 +473,7 @@ h2 {
     box-sizing:border-box;
     color:rgb(4, 12, 19);
     display:inline-block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:169.594px;
     line-height:normal;
@@ -489,7 +490,7 @@ h2 {
     vertical-align:top;
     visibility:visible;
     white-space:normal;
-    width:277.328px;
+    width:28%;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
@@ -499,12 +500,12 @@ h2 {
     color:rgb(4, 12, 19);
     column-gap:15px;
     display:grid;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     grid-template-areas:"image title" "image review" "image price" "image compare" "image a2c";
     grid-template-columns:95px 137.328px;
     grid-template-rows:48px 22px 36.5938px 31px 0px;
-    height:169.594px;
+    height:151px;
     line-height:normal;
     list-style-image:none;
     list-style-position:outside;
@@ -514,7 +515,7 @@ h2 {
     text-size-adjust:100%;
     visibility:visible;
     white-space:normal;
-    width:247.328px;
+    width:330.328px;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
@@ -541,7 +542,7 @@ h2 {
     color:rgb(4, 87, 200);
     cursor:pointer;
     display:inline;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:76px;
     line-height:normal;
@@ -567,7 +568,7 @@ h2 {
     color:rgb(0, 30, 115);
     cursor:pointer;
     display:block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:48px;
     line-height:normal;
@@ -586,13 +587,14 @@ h2 {
 
 .reviewBox {
 
-    align-items:center;
-    box-sizing:border-box;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing:border-box; */
     color:rgb(0, 70, 190);
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:22px;
     line-height:normal;
@@ -604,14 +606,15 @@ h2 {
     margin-bottom:0px;
     margin-inline-end:0px;
     margin-inline-start:0px;
-    margin-top:0px;
+    margin-top: 0px;
     padding-inline-start:0px;
+    padding-top: 10px;
     padding-left:0px;
     text-align:left;
     text-size-adjust:100%;
     visibility:visible;
     white-space:normal;
-    width:137.328px;
+    width:105px;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
@@ -622,72 +625,62 @@ h2 {
     background-position-y:-142px;
     background-repeat-x:;
     background-repeat-y:;
-    box-sizing:border-box;
+    /* box-sizing:border-box; */
     color:rgb(4, 87, 200);
     cursor:pointer;
-    display:block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:11px;
-    font-style:italic;
-    height:14px;
+    /* font-style:italic; */
+    height:auto;
     line-height:normal;
     list-style-image:none;
     list-style-position:outside;
     list-style-type:none;
-    margin-right:4px;
+    margin-right: 0;
     position:relative;
     text-align:left;
     text-size-adjust:100%;
-    100%html
     visibility:visible;
     white-space:normal;
-    width:71px;
+    width:100%;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-.star-rating {
-    width: 0;
-    position: relative;
-    display:inline-block;
-    background-image: url(star_0.svg);
-    background-position: 0 0;
-    background-repeat: repeat-x;
+div.stars {
+    width: 260;
+    display: inline-block;
   }
   
-  .star-rating[data-title]:hover:after {
-    content: attr(data-title);
-    padding: 4px 8px;
-    color: #333;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    z-index: 20;
-    white-space: nowrap;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -moz-box-shadow: 0px 0px 4px #222;
-    -webkit-box-shadow: 0px 0px 4px #222;
-    box-shadow: 0px 0px 4px #222;
-    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
-    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  input.star { display: none; }
+  
+  label.star {
+    float: right;
+    padding: 2px;
+    font-size: 14px;
+    color: #444;
+    /* transition: all .2s; */
   }
   
-  .star-rating .star-value {
-    height: 100%;
-    position: absolute;
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    /* transition: all .25s; */
   }
   
-  .star-rating .star-value {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url('./star_1.svg') ;
-    background-repeat: repeat-x;
+  input.star-5:checked ~ label.star:before {
+    color: #FD4;
+    /* text-shadow: 0 0 1px #952; */
+  }
+  
+  input.star-1:checked ~ label.star:before { color: #FD4; }
+  
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
   }
 
 .itemRating {
@@ -696,19 +689,18 @@ h2 {
     color:rgb(4, 87, 200);
     cursor:pointer;
     display:inline;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:11px;
-    height:auto;
+    height: auto;
     line-height:normal;
     list-style-image:none;
     list-style-position:outside;
     list-style-type:none;
-    text-align:left;
-    text-size-adjust:100%;
-    100%html
+    text-align:right;
+    text-size-adjust: 100%;
     visibility:visible;
     white-space:normal;
-    width:auto;
+    width: 50%;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 
 }
@@ -718,11 +710,12 @@ h2 {
     box-sizing:border-box;
     color:rgb(29, 37, 44);
     display:block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:15px;
     font-stretch:100%;
-    font-style:normal;
-    font-weight:500;
+    font-style:bold;
+    font-weight:700;
+    padding-top: 6px;
     height:18px;
     line-height:18px;
     list-style-image:none;
@@ -742,11 +735,13 @@ h2 {
     box-sizing:border-box;
     color:rgb(29, 37, 44);
     display:inline;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:15px;
     font-stretch:100%;
-    font-style:normal;
-    font-weight:500;
+    font-style:bold;
+    font-weight:700;
+    padding-top: 8px;
+    margin-top: 5px;
     height:auto;
     line-height:18px;
     list-style-image:none;
@@ -765,8 +760,11 @@ h2 {
     box-sizing:border-box;
     color:rgb(4, 12, 19);
     display:block;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
+    font-style:bold;
+    font-weight:700;
     font-size:13px;
+    padding-top: 6px;
     height:18.5938px;
     line-height:normal;
     list-style-image:none;
@@ -785,11 +783,11 @@ h2 {
     box-sizing:border-box;
     color:rgb(29, 37, 44);
     display:inline;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:15px;
     font-stretch:100%;
-    font-style:normal;
-    font-weight:400;
+    font-style:bold;
+    font-weight:700;
     height:auto;
     line-height:18px;
     list-style-image:none;
@@ -797,7 +795,6 @@ h2 {
     list-style-type:none;
     text-align:left;
     text-size-adjust:100%;
-    100%html
     visibility:visible;
     white-space:normal;
     width:auto;
@@ -811,7 +808,7 @@ h2 {
     color:rgb(0, 70, 190);
     cursor:pointer;
     display:flex;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     font-weight:400;
     height:31px;
@@ -830,7 +827,6 @@ h2 {
     padding-top:7px;
     text-align:left;
     text-size-adjust:100%;
-    100%html
     visibility:visible;
     white-space:normal;
     width:77.0938px;
@@ -845,7 +841,7 @@ h2 {
     color:rgb(0, 70, 190);
     cursor:pointer;
     display:flex;
-    font-family:"Human BBY Web", Arial, Helvetica, sans-serif;
+    font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     font-weight:400;
     height:31px;

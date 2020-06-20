@@ -2,7 +2,6 @@ import React, {useState, Component} from 'react';
 import ItemCarousel from './components/ItemCarousel';
 import Axios from 'axios';
 import data from '../../testData/bestBuyScrape';
-// import data from '../../dummyData';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +38,7 @@ class App extends Component {
     Axios.get('/products')
       .then( res => {
         let products = res.data;
-        this.setState({products: products}, () => console.log('products done gotten', this.state.products));
+        this.setState({products: products});
       })
       .catch( err => {
 
