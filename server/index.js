@@ -4,7 +4,8 @@ const httpProxy = require('http-proxy');
 
 const proxy = httpProxy.createProxyServer({
     changeOrigin: true,
-});
+    target: 'http://localhost:3333',
+}).listen(8008, () => 'listening on proxy port 8008');
 
 const cors = require('cors')
 const path = require('path');
@@ -17,6 +18,14 @@ app.use(express.static(path.join(__dirname, '../dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// proxy server end point to catch all requests and reroute them to 8080
+app.all('*', (req, res) => {
+
+    proxy.web(req, res, {
+
+      target: 'http://localhost:8008/'
+    });
+});
 
 
 app.get('/products', (request, response) => {
