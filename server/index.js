@@ -1,32 +1,34 @@
 const express = require('express');
 const app = express();
+const http = require('http');
 const httpProxy = require('http-proxy');
 
-const proxy = httpProxy.createProxyServer({
-    changeOrigin: true,
-    target: 'http://localhost:3333',
-}).listen(8008, () => 'listening on proxy port 8008');
+const proxy = httpProxy.createProxyServer({});
 
-const cors = require('cors')
+// http.createServer((req,res) => {
+
+//   proxy.web(req, res, {target: 'http://localhost:3333'});
+
+// }).listen(8008);
+
+const cors = require('cors');
 const path = require('path');
 const bodyParser = require('body-parser');
 const queries = require('../database/queries');
-const data = require('../bestBuyScrape');
+const data = require('../testData/bestBuyScrape');
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, '../dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// proxy server end point to catch all requests and reroute them to 8080
-app.all('*', (req, res) => {
+// app.all('*', (req, res) => {
 
-    proxy.web(req, res, {
+//     proxy.web(req, res, {
 
-      target: 'http://localhost:8008/'
-    });
-});
-
+//       target: 'http://localhost:8008/',
+//     });
+// });
 
 app.get('/products', (request, response) => {
 
@@ -59,6 +61,7 @@ app.get('/seed', (request, response) => {
                 console.error(error);
             } else {
                 console.log('database seeded');
+                response.end();
             }
         })
     })

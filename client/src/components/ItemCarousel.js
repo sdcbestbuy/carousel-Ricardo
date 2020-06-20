@@ -9,7 +9,6 @@ const ItemCarousel = (props) => {
     const [index, setIndex] = useState(0);
     const [endex, setEndex] = useState(3);
     const [carouselData, setCarouselData] = useState(itemArray.slice(index, endex));
-    // const [carouselData, setCarouselData] = useState([]);
 
 //========================================================================
 // functions for controlling the arrow buttons on the side of the carousel
