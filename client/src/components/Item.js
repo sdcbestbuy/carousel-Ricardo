@@ -8,7 +8,6 @@ const Item = (props) => {
     return (
 
         <div className="itemContainer">
-            <li>
             <div className="itemBlock">
                 <div>
                     <img className="itemImage" src={props.data.image}></img>
@@ -21,18 +20,15 @@ const Item = (props) => {
                     <div id="itemPrice">
                         <span className="itemPrice">{props.data.regularPrice}</span>
                     </div>
-                    <div id="itemPriceDiscount">
-                        <span className="itemPriceDiscount">{props.data.regularPrice}</span>
-                    </div>
                     <div type="itemCompare">
-                        <i type="checkbox"></i>
-                        <label className="compareLabel">compare</label>
+                        <label className="checkbox">
+                            <input type="checkbox"></input>
+                            <span></span>
+                        </label>
                     </div>
                 </div>
             </div>
-            </li>
         </div>
-
     )
 }
 
