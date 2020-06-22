@@ -9,24 +9,30 @@ const Item = (props) => {
 
         <div className="itemContainer">
             <div className="itemBlock">
-                <div>
+
+                <div className="image">
                     <img className="itemImage" src={props.data.image}></img>
                 </div>
-                <div>
+
+                <div className="name">
                     <p className="itemName">{props.data.name}</p>
-                    <ul className="reviewBox">
-                        <Star rating={props.data.customerReviewAverage}/>
-                    </ul>
-                    <div id="itemPrice">
-                        <span className="itemPrice">{props.data.regularPrice}</span>
-                    </div>
-                    <div type="itemCompare">
-                        <label className="checkbox">
-                            <input type="checkbox"></input>
-                            <span></span>
-                        </label>
-                    </div>
                 </div>
+
+                <ul className="review">
+                    <Star rating={props.data.customerReviewAverage}/>
+                </ul>
+
+                <div id="price">
+                    <span className="itemPrice">{props.data.regularPrice}</span>
+                </div>
+                
+                <div type="compare">
+                    <label className="checkbox">
+                        <input type="checkbox"></input>
+                        <span></span>
+                    </label>
+                </div>
+
             </div>
         </div>
     )

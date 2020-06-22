@@ -1,50 +1,32 @@
-body {
+root {
 
-    background-color: white;
-    display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: flex-start; 
-}
-
-#root {
-
-    box-sizing:border-box;
-    color:rgb(4, 12, 19);
-    display:flex;
-    justify-content: center;
-    float:left;
-    font-family:'Nunito', Arial, Helvetica, sans-serif;
-    font-size:13px;
-    height:336.594px;
-    line-height:normal;
-    min-height:1px;
-    padding-left:15px;
-    padding-right:15px;
-    position:relative;
-    text-size-adjust:100%;
-    width:98%;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-}
-
-#mainContainer {
-
-    justify-content: stretch;
-    /* box-sizing:border-box; */
-    color:rgb(4, 12, 19);
-    display: block;
-    justify-content: stretch;
-    font-family:'Nunito', Arial, Helvetica, sans-serif;
-    font-size:13px;
-    height:272.594px;
-    line-height:normal;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    padding-top:0px;
-    text-size-adjust:100%;
     width: 100%;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    
+    font-size: 13px;
+    line-height: normal;
+    color: #040c13;
+    font-family: Human BBY Web,Arial,Helvetica,sans-serif;
+}
+
+.carouselWrapper {
+
+    min-width: 730px;
+    padding: 0 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+}
+
+.allCarouselContent {
+
+    box-sizing: border-box; 
+    display: block;  
 }
 
 h2 {
@@ -146,20 +128,35 @@ h2 {
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-.carouselContainer {
+.carouselContent {
 
-    box-sizing:border-box;
-    color:rgb(4, 12, 19);
-    align-content: center;
-    display:block;
-    font-family:'Nunito', Arial, Helvetica, sans-serif;
-    font-size:13px;
-    height:257.594px;
-    line-height:normal;
-    text-size-adjust:100%;
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    box-sizing: border-box;
 
-    width: 1200px;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.ulWrapper {
+
+    margin: 0 50px;
+    overflow: hidden;
+    display: block;
+}
+
+.carouselList {
+
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+    white-space: nowrap;
+    transition: transform .5s ease-in-out;
+    padding: 0;
 }
 
 .previousButton {
@@ -450,7 +447,7 @@ h2 {
     -webkit-font-smoothing:antialiased;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
-
+/* 
 .carousel {
 
     justify-content: center;
@@ -466,98 +463,93 @@ h2 {
     text-size-adjust:100%;
     width:100%;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-}
+} */
 
 .itemContainer {
 
-    box-sizing:border-box;
-    color:rgb(4, 12, 19);
-    display:inline-block;
-    font-family:'Nunito', Arial, Helvetica, sans-serif;
-    font-size:13px;
-    height:169.594px;
-    line-height:normal;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    margin-left:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:0px;
-    padding-top:0px;
-    text-align:left;
-    text-size-adjust:100%;
-    vertical-align:top;
-    visibility:visible;
-    white-space:normal;
-    width:28%;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+
+    width: 33.33333%;
+    visibility: visible;
+
+    padding: 0 0 0 15px;
+
+    white-space: normal;
+    display: inline-block;
+    list-style: none;
+    padding: 0 15px;
+    vertical-align: top;
+    margin-left: 0;
 }
 
 .itemBlock {
 
-    box-sizing:border-box;
-    color:rgb(4, 12, 19);
-    column-gap:15px;
-    display:grid;
-    font-family:'Nunito', Arial, Helvetica, sans-serif;
-    font-size:13px;
-    grid-template-areas:"image title" "image review" "image price" "image compare" "image a2c";
-    grid-template-columns:95px 137.328px;
-    grid-template-rows:48px 22px 36.5938px 31px 0px;
-    height:151px;
-    line-height:normal;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    row-gap:8px;
-    text-align:left;
-    text-size-adjust:100%;
-    visibility:visible;
-    white-space:normal;
-    width:330.328px;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    display: grid;
+    grid-template-areas:
+        "image title"
+        "image review"
+        "image price"
+        "image compare"
+        "image a2c";
+    /* -ms-grid-columns: 95px 15px auto; */
+    grid-template-columns: 95px auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 8px;
+    /* -ms-grid-rows: auto 8px auto 8px auto 8px auto; */
+    grid-template-rows: repeat(4,auto);
+}
+
+.image {
+    grid-area: image;
+}
+
+.name {
+    grid-area: name;
+}
+
+.review {
+    grid-area: review;
+}
+
+.price {
+    grid-area: price;
+}
+
+.compare {
+    grid-area: compare;
+    display: flex;
+    align-items: center;
+    color: #0046be;
+}
+
+.compareLabel {
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 400;
+    padding: 7px 0 8px;
+    margin: 0;
+
+    max-width: 100%;
 }
 
 .itemImage {
 
     border-bottom-color:rgb(4, 87, 200);
-    border-bottom-style:none;
-    border-bottom-width:0px;
-    border-image-outset:0px;
-    border-image-repeat:stretch;
-    border-image-slice:100%;
-    border-image-source:none;
-    border-image-width:1;
     border-left-color:rgb(4, 87, 200);
-    border-left-style:none;
-    border-left-width:0px;
     border-right-color:rgb(4, 87, 200);
-    border-right-style:none;
-    border-right-width:0px;
     border-top-color:rgb(4, 87, 200);
-    border-top-style:none;
-    border-top-width:0px;
-    box-sizing:border-box;
     color:rgb(4, 87, 200);
     cursor:pointer;
     display:inline;
     font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
-    height:76px;
-    line-height:normal;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    max-height:95px;
-    max-width:95px;
-    text-align:left;
-    text-size-adjust:100%;
-    100%html
-    vertical-align:middle;
-    visibility:visible;
-    white-space:normal;
-    width:95px;
+    max-height: 95px;
+    max-width: 95px;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 
 }
@@ -571,15 +563,6 @@ h2 {
     font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:48px;
-    line-height:normal;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    max-height:48px;
-    text-align:left;
-    text-size-adjust:100%;
-    visibility:visible;
-    white-space:normal;
     width:137.328px;
     margin: 0;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
@@ -587,16 +570,11 @@ h2 {
 
 .reviewBox {
 
-    /* box-sizing:border-box; */
     color:rgb(0, 70, 190);
     display:block;
     font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:13px;
     height:22px;
-    line-height:normal;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
     margin-block-end:0px;
     margin-block-start:0px;
     margin-bottom:0px;
@@ -606,10 +584,6 @@ h2 {
     padding-inline-start:0px;
     padding-top: 0px;
     padding-left:0px;
-    text-align:left;
-    text-size-adjust:100%;
-    visibility:visible;
-    white-space:normal;
     width:105px;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
@@ -622,18 +596,10 @@ h2 {
     display:block;
     font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:11px;
-    /* font-style:italic; */
-    height:auto;
-    line-height:normal;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
     margin-right: 0px;
     position:relative;
     text-align:left;
     text-size-adjust:100%;
-    visibility:visible;
-    white-space:normal;
     width:100%;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
@@ -643,33 +609,33 @@ div.stars {
     display: inline-block;
   }
   
-  input.star { display: none; }
-  
-  label.star {
+input.star { display: none; }
+
+label.star {
     float: right;
     padding: 2px;
     font-size: 14px;
     color: #444;
     /* transition: all .2s; */
-  }
-  
-  input.star:checked ~ label.star:before {
+}
+
+input.star:checked ~ label.star:before {
     content: '\f005';
     color: #FD4;
     /* transition: all .25s; */
-  }
-  
-  input.star-5:checked ~ label.star:before {
+}
+
+input.star-5:checked ~ label.star:before {
     color: #FD4;
     /* text-shadow: 0 0 1px #952; */
-  }
-  
-  input.star-1:checked ~ label.star:before { color: #FD4; }
-  
-  label.star:before {
+}
+
+input.star-1:checked ~ label.star:before { color: #FD4; }
+
+label.star:before {
     content: '\f006';
     font-family: FontAwesome;
-  }
+}
 
 .itemRating {
 
@@ -690,7 +656,6 @@ div.stars {
     white-space:normal;
     width: 50%;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-
 }
 
 #itemPrice {
@@ -700,19 +665,11 @@ div.stars {
     display:block;
     font-family:'Nunito', Arial, Helvetica, sans-serif;
     font-size:15px;
-    font-stretch:100%;
     font-style:bold;
     font-weight:700;
     padding-top: 6px;
     height:18px;
     line-height:18px;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    text-align:left;
-    text-size-adjust:100%;
-    visibility:visible;
-    white-space:normal;
     width:137.328px;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
@@ -727,35 +684,10 @@ div.stars {
     font-stretch:100%;
     padding-top: 0px;
     margin-top: 0px;
-    height:auto;
-    line-height:18px;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    text-align:left;
-    text-size-adjust:100%;
-    visibility:visible;
-    white-space:normal;
-    width:auto;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-#itemCompare {
 
-    display: flex;
-    align-items: center;
-    color: #0046be;
-}
-
-.compareLabel {
-    cursor: pointer;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    font-weight: 400;
-    padding: 7px 0 8px;
-    margin: 0;
-}
 
 .checkbox {
 
@@ -776,7 +708,6 @@ div.stars {
 
     background-image: none;
     background-color: #fff;
-
 }
 
 .checkbox > input {
@@ -820,13 +751,5 @@ div.stars {
     font-size: 17px;
     left: 5px;
     bottom: 8px
-
-
 }
-
-/* checkbox:hover > input:active {
-
-    background-image: none;
-    background-color: #fff;
-} */
 

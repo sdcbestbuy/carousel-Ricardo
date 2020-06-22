@@ -32,24 +32,28 @@ const ItemCarousel = (props) => {
     }
 
     return (
-        <div className="carouselContainer">
-            <div className="carouselHeader">
-                <h2>People also viewed<span className="xItems">(15 items)</span></h2>
-            </div>
-            <div className="bottomLine"></div>
-            <div className="carousel">
-                <button className="previousButton" onClick={() => previousItems(3)}>
-                    <svg className="svgLeft"><path className="pathLeft"></path></svg>
-                </button>
-                    {carouselData.map((item, i) => {
-                        return (
+        <div className="carouselWrapper">
+            <div className="carouselContent">
+                <div className="carouselHeader">
+                    <h2>People also viewed<span className="xItems">(15 items)</span></h2>
+                </div>
+                <div className="bottomLine"></div>
+                    <button className="previousButton" onClick={() => previousItems(3)}>
+                        <svg className="svgLeft"><path className="pathLeft"></path></svg>
+                    </button>
+                <div className="ulWrapper">
+                    <ul className="carouselList">
+                        {carouselData.map((item, i) => {
+                            return (
 
-                            <Item key={i} data={item}/>
-                        )
-                    })}
-                <button className="nextButton" onClick={() => nextItems(3)}>
-                    <svg className="svgRight"><path className="pathRight"></path></svg>
-                </button>
+                                <Item key={i} data={item}/>
+                            )
+                        })}
+                    </ul>
+                </div>
+                    <button className="nextButton" onClick={() => nextItems(3)}>
+                        <svg className="svgRight"><path className="pathRight"></path></svg>
+                    </button>
             </div>
         </div>
     )
