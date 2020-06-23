@@ -22,17 +22,14 @@ app.use(bodyParser.urlencoded({
 }));
 app.get('/products', function (request, response) {
   queries.getProducts(function (error, result) {
-    if (error) {
-      console.error('error at endpoint with getting products', error);
+    if (error) {// console.error('error at endpoint with getting products', error);
     } else {
-      console.log('here is your return result', result);
       response.send(result);
     }
   });
 });
 var port = 3333;
-app.listen(port, function () {
-  console.log("Listening on port ".concat(port));
+app.listen(port, function () {// console.log(`Listening on port ${port}`);
 }); // only used when seeding the database
 
 app.get('/seed', function (request, response) {
@@ -42,7 +39,7 @@ app.get('/seed', function (request, response) {
       if (error) {
         console.error(error);
       } else {
-        console.log('database seeded');
+        // console.log('database seeded');
         response.end();
       }
     });
