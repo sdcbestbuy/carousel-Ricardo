@@ -334,6 +334,7 @@ svg {
         "image price"
         "image compare"
         "image a2c";
+
     /* -ms-grid-columns: 95px 15px auto; */
     grid-template-columns: 95px auto;
     grid-column-gap: 15px;
@@ -518,4 +519,3 @@ svg {
     left: 5px;
     bottom: 8px
 }
-

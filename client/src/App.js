@@ -2,6 +2,7 @@ import React, {useState, Component} from 'react';
 import ItemCarousel from './components/ItemCarousel';
 import Axios from 'axios';
 import data from '../../testData/bestBuyScrape';
+
 class App extends Component {
   constructor(props) {
     super(props);
