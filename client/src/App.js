@@ -1,7 +1,7 @@
 import React, {useState, Component} from 'react';
 import ItemCarousel from './components/ItemCarousel';
 import Axios from 'axios';
-import data from '../../testData/bestBuyScrape';
+import data from '../../testData/';
 
 class App extends Component {
   constructor(props) {

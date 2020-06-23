@@ -19,7 +19,7 @@ app.get('/products', (request, response) => {
 
             console.error('error at endpoint with getting products', error);
         } else {
-            console.log('here is your return result', result);
+
             response.send(result);
         }
     })
