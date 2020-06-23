@@ -22,15 +22,17 @@ const Item = (props) => {
                     <Star rating={props.data.customerReviewAverage}/>
                 </ul>
 
-                <div id="price">
+                <div className="price">
                     <span className="itemPrice">{props.data.regularPrice}</span>
                 </div>
-                
+
                 <div type="compare">
+                    
                     <label className="checkbox">
                         <input type="checkbox"></input>
                         <span></span>
                     </label>
+                        Compare
                 </div>
 
             </div>
