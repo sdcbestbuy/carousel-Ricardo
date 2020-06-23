@@ -6,11 +6,11 @@ const seedDatabase = (reviewCount, image, name, price, description, thumbnail, c
     connection.query('INSERT INTO items (customerReviewCount, image, name, regularPrice, thumbnailImage) VALUES (?, ?, ?, ?, ?)',[reviewCount, image, name, price, description, thumbnail],  (error, result) => {
 
         if (error) {
-            console.error('error with query', error);
-            // callback(error, null);
+            // console.error('error with query', error);
+            callback(error, null);
         } else {
-            console.log('query successful')
-            // callback(null, result);
+            // console.log('query successful')
+            callback(null, result);
         }
     })
 }
@@ -22,7 +22,7 @@ const getProducts = (callback) => {
         if (error) {
 
             callback(error, null);
-            console.error('error getting products at query level', error);
+            // console.error('error getting products at query level', error);
         } else {
 
             callback(null, result);

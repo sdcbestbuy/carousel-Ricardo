@@ -26,11 +26,11 @@ class App extends Component {
     Axios.get('/seed')
       .then( res => {
 
-        console.log('database seeded');
+        // console.log('database seeded');
       })
       .catch( err => {
 
-        console.error('error with seeding database', err);
+        // console.error('error with seeding database', err);
       })
   }
 
@@ -43,7 +43,7 @@ class App extends Component {
       })
       .catch( err => {
 
-        console.error('error with getting products', err);
+        // console.error('error with getting products', err);
       })
   }
 
