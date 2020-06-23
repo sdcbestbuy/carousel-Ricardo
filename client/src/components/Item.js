@@ -27,12 +27,10 @@ const Item = (props) => {
                 </div>
 
                 <div type="compare">
-                    
                     <label className="checkbox">
                         <input type="checkbox"></input>
                         <span></span>
                     </label>
-                        Compare
                 </div>
 
             </div>

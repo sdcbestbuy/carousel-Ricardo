@@ -507,6 +507,7 @@ svg {
 .checkbox > input:checked + span::before {
 
     content: "\f00c";
+    font-weight: 900;
     display: block;
     font-family: 'FontAwesome';
     text-align: center;
@@ -517,3 +518,4 @@ svg {
     left: 5px;
     bottom: 8px
 }
+
