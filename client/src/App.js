@@ -1,7 +1,7 @@
 import React, {useState, Component} from 'react';
 import ItemCarousel from './components/ItemCarousel';
 import Axios from 'axios';
-import data from '../../testData/';
+import data from '../../testData';
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-
+    console.log(data.data)
     this.getProducts();
 
   }

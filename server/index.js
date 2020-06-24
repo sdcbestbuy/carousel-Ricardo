@@ -32,18 +32,18 @@ app.listen(port, () => {
 })
 
 // only used when seeding the database
-app.get('/seed', (request, response) => {
+// app.get('/seed', (request, response) => {
 
-    data.data.forEach((item) => {
-        console.log(item)
-        queries.seedDatabase(item.customerReviewCount, item.image, item.name, item.regularPrice, item.thumbnailImage, (error, result) => {
+//     data.data.forEach((item) => {
+//         console.log(item)
+//         queries.seedDatabase(item.customerReviewCount, item.image, item.name, item.regularPrice, item.thumbnailImage, (error, result) => {
     
-            if (error) {
-                console.error(error);
-            } else {
-                // console.log('database seeded');
-                response.end();
-            }
-        })
-    })
-})
+//             if (error) {
+//                 console.error(error);
+//             } else {
+//                 // console.log('database seeded');
+//                 response.end();
+//             }
+//         })
+//     })
+// })
