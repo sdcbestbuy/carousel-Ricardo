@@ -20,16 +20,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-app.get('/products', function (request, response) {
+app.get('/products', function (req, res) {
   queries.getProducts(function (error, result) {
-    if (error) {// console.error('error at endpoint with getting products', error);
+    if (error) {
+      console.error('error at endpoint with getting products', error);
     } else {
-      response.send(result);
+      res.send(result);
     }
   });
 });
-var port = 3333;
-app.listen(port, function () {// console.log(`Listening on port ${port}`);
+var PORT = 3333;
+app.listen(PORT, function () {
+  console.log("Listening on port ".concat(port));
 }); // only used when seeding the database
 // app.get('/seed', (request, response) => {
 //     data.data.forEach((item) => {
