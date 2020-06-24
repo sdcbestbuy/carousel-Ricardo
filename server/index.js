@@ -17,9 +17,9 @@ app.get('/products', (request, response) => {
 
         if (error) {
 
-            console.error('error at endpoint with getting products', error);
+            // console.error('error at endpoint with getting products', error);
         } else {
-            console.log('here is your return result', result);
+
             response.send(result);
         }
     })
@@ -28,7 +28,7 @@ app.get('/products', (request, response) => {
 const port = 3333;
 app.listen(port, () => {
 
-    console.log(`Listening on port ${port}`);
+    // console.log(`Listening on port ${port}`);
 })
 
 // only used when seeding the database
@@ -41,7 +41,7 @@ app.get('/seed', (request, response) => {
             if (error) {
                 console.error(error);
             } else {
-                console.log('database seeded');
+                // console.log('database seeded');
                 response.end();
             }
         })
