@@ -1,8 +1,10 @@
+DROP DATABASE IF EXISTS products;
+
 CREATE DATABASE products;
 
 USE products;
 
-CREATE TABLE items (
+CREATE TABLE product (
   id INT PRIMARY KEY AUTO_INCREMENT,
   customer_review_AVG INT,
   customerReviewCount INT,
