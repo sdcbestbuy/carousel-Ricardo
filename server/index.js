@@ -11,25 +11,25 @@ app.use(express.static(path.join(__dirname, '../dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/products', (request, response) => {
+app.get('/products', (req, res) => {
 
     queries.getProducts((error, result) => {
 
         if (error) {
 
-            // console.error('error at endpoint with getting products', error);
+            console.error('error at endpoint with getting products', error);
         } else {
 
-            response.send(result);
+            res.send(result);
         }
-    })
-})
+    });
+});
 
-const port = 3333;
-app.listen(port, () => {
+const PORT = 3333;
+app.listen(PORT, () => {
 
-    // console.log(`Listening on port ${port}`);
-})
+    console.log(`Listening on port ${port}`);
+});
 
 // only used when seeding the database
 // app.get('/seed', (request, response) => {
