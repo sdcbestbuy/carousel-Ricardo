@@ -24,7 +24,7 @@ const getProducts = (callback) => {
             callback(error, null);
             console.error('error getting products at query level', error);
         } else {
-
+            console.log(result)
             callback(null, result);
         }
     })
