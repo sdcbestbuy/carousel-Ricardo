@@ -4,7 +4,6 @@ const cors = require('cors');
 const path = require('path');
 const bodyParser = require('body-parser');
 const queries = require('../database/queries');
-const data = require('../testData/bestBuyScrape');
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, '../dist')));
@@ -41,7 +40,6 @@ app.listen(port, () => {
 //             if (error) {
 //                 console.error(error);
 //             } else {
-//                 // console.log('database seeded');
 //                 response.end();
 //             }
 //         })

@@ -12,8 +12,6 @@ var bodyParser = require('body-parser');
 
 var queries = require('../database/queries');
 
-var data = require('../testData/bestBuyScrape');
-
 app.use(cors());
 app.use(express["static"](path.join(__dirname, '../dist')));
 app.use(bodyParser.json());
@@ -40,7 +38,6 @@ app.listen(port, function () {
 //             if (error) {
 //                 console.error(error);
 //             } else {
-//                 // console.log('database seeded');
 //                 response.end();
 //             }
 //         })

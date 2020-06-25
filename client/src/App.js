@@ -1,17 +1,18 @@
 import React, {useState, Component} from 'react';
 import ItemCarousel from './components/ItemCarousel';
 import Axios from 'axios';
-import data from '../../testData';
+// import data from '../../testData';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
 
-      products: [data.data[0], data.data[1], data.data[2]]
+      products: []
+      // products: [data.data[0], data.data[1], data.data[2]]
     }
 
-    this.seedDB = this.seedDB.bind(this);
+    // this.seedDB = this.seedDB.bind(this);
     this.getProducts = this.getProducts.bind(this);
   }
 
@@ -19,18 +20,18 @@ class App extends Component {
     this.getProducts();
   }
 
-  seedDB() {
+  // seedDB() {
 
-    Axios.get('/seed')
-      .then( res => {
+  //   Axios.get('/seed')
+  //     .then( res => {
 
-        console.log('database seeded');
-      })
-      .catch( err => {
+  //       console.log('database seeded');
+  //     })
+  //     .catch( err => {
 
-        console.error('error with seeding database', err);
-      })
-  }
+  //       console.error('error with seeding database', err);
+  //     })
+  // }
 
   getProducts() {
 
