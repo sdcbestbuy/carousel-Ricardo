@@ -8,6 +8,15 @@ const connection = mysql.createConnection({
   database: 'products',
 });
 
-connection.connect();
+connection.connect((error) => {
+
+  if(error) {
+
+    console.error(error);
+  } else {
+
+    console.log('connected to the database');
+  }
+});
 
 module.exports = {connection}
