@@ -24,7 +24,7 @@ app.get('/products', function (req, res) {
     }
   });
 });
-var port = 3333;
+var port = process.env.PORT || 8081;
 app.listen(port, function () {
   console.log("Listening on port ".concat(port));
 }); // only used when seeding the database
