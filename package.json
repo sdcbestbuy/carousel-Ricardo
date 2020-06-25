@@ -4,7 +4,7 @@
   "description": "carousel component for fec project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/server.compiled.js",
+    "start": "node server/server.compiled.js",
     "build2": "webpack --config webpack.config.js",
     "build": "babel server/index.js --out-file server/server.compiled.js"
   },
