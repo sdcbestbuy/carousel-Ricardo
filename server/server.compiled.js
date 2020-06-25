@@ -29,8 +29,8 @@ app.get('/products', function (req, res) {
     }
   });
 });
-var PORT = 3333;
-app.listen(PORT, function () {
+var port = 3333;
+app.listen(port, function () {
   console.log("Listening on port ".concat(port));
 }); // only used when seeding the database
 // app.get('/seed', (request, response) => {

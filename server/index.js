@@ -25,8 +25,8 @@ app.get('/products', (req, res) => {
     });
 });
 
-const PORT = 3333;
-app.listen(PORT, () => {
+const port = 3333;
+app.listen(port, () => {
 
     console.log(`Listening on port ${port}`);
 });

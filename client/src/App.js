@@ -19,18 +19,18 @@ class App extends Component {
     this.getProducts();
   }
 
-  // seedDB() {
+  seedDB() {
 
-  //   Axios.get('/seed')
-  //     .then( res => {
+    Axios.get('/seed')
+      .then( res => {
 
-  //       console.log('database seeded');
-  //     })
-  //     .catch( err => {
+        console.log('database seeded');
+      })
+      .catch( err => {
 
-  //       console.error('error with seeding database', err);
-  //     })
-  // }
+        console.error('error with seeding database', err);
+      })
+  }
 
   getProducts() {
 
