@@ -4,15 +4,12 @@ var express = require('express');
 
 var app = express();
 
-var cors = require('cors');
-
 var path = require('path');
 
 var bodyParser = require('body-parser');
 
 var queries = require('../database/queries');
 
-app.use(cors());
 app.use(express["static"](path.join(__dirname, '../dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
