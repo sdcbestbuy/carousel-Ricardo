@@ -4,17 +4,12 @@ var express = require('express');
 
 var app = express();
 
-var cors = require('cors');
-
 var path = require('path');
 
 var bodyParser = require('body-parser');
 
 var queries = require('../database/queries');
 
-var data = require('../testData/bestBuyScrape');
-
-app.use(cors());
 app.use(express["static"](path.join(__dirname, '../dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -29,8 +24,8 @@ app.get('/products', function (req, res) {
     }
   });
 });
-var PORT = 3333;
-app.listen(PORT, function () {
+var port = 3333;
+app.listen(port, function () {
   console.log("Listening on port ".concat(port));
 }); // only used when seeding the database
 // app.get('/seed', (request, response) => {
@@ -40,7 +35,6 @@ app.listen(PORT, function () {
 //             if (error) {
 //                 console.error(error);
 //             } else {
-//                 // console.log('database seeded');
 //                 response.end();
 //             }
 //         })

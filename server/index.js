@@ -1,12 +1,9 @@
 const express = require('express');
 const app = express();
-const cors = require('cors');
 const path = require('path');
 const bodyParser = require('body-parser');
 const queries = require('../database/queries');
-const data = require('../testData/bestBuyScrape');
 
-app.use(cors());
 app.use(express.static(path.join(__dirname, '../dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,8 +22,8 @@ app.get('/products', (req, res) => {
     });
 });
 
-const PORT = 3333;
-app.listen(PORT, () => {
+const port = 3333;
+app.listen(port, () => {
 
     console.log(`Listening on port ${port}`);
 });
@@ -41,7 +38,6 @@ app.listen(PORT, () => {
 //             if (error) {
 //                 console.error(error);
 //             } else {
-//                 // console.log('database seeded');
 //                 response.end();
 //             }
 //         })

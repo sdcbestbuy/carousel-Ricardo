@@ -6,11 +6,11 @@ const Star = () => {
 
         <ul class="ulReviews">
             <li className="star">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
                 <span className="totalReviews">(275)</span>
             </li>
         </ul>
