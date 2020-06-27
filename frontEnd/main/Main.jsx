@@ -12,7 +12,7 @@ class App extends Component {
       // products: [data.data[0], data.data[1], data.data[2]]
     }
 
-    // this.seedDB = this.seedDB.bind(this);
+    this.seedDB = this.seedDB.bind(this);
     this.getProducts = this.getProducts.bind(this);
   }
 
@@ -20,18 +20,18 @@ class App extends Component {
     this.getProducts();
   }
 
-  // seedDB() {
+  seedDB() {
 
-  //   Axios.get('/seed')
-  //     .then( res => {
+    Axios.get('/seed')
+      .then( res => {
 
-  //       console.log('database seeded');
-  //     })
-  //     .catch( err => {
+        console.log('database seeded');
+      })
+      .catch( err => {
 
-  //       console.error('error with seeding database', err);
-  //     })
-  // }
+        console.error('error with seeding database', err);
+      })
+  }
 
   getProducts() {
 

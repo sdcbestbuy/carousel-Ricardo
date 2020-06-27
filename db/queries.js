@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-  host: process.env.RDS_HOSTNAME||'localhost',
-  user: process.env.RDS_USERNAME||'root',
-  password: process.env.RDS_PASSWORD||'Unlucky1!',
-  database: process.env.RDS_DB_NAME||'products',
-  port: process.env.RDS_PORT || 3306,
+  host: 'aa38ugi7pcuwxd.czkwyvdb9mxc.us-east-2.rds.amazonaws.com' ||'localhost',
+  user: 'root',
+  password: 'Unlucky1!',
+  database: 'products',
+  port: 3306,
 });
 
 connection.connect((err)=>{
