@@ -11,11 +11,11 @@ const Item = (props) => {
             <div className="itemBlock">
 
                 <div className="image">
-                    <img className="itemImage" src={props.data.image}></img>
+                    <img className="itemImage" src={props.data.product_image}></img>
                 </div>
 
                 <div className="name">
-                    <p className="itemName">{props.data.name}</p>
+                    <p className="itemName">{props.data.product_name}</p>
                 </div>
 
                 <ul className="review">

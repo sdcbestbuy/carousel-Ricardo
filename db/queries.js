@@ -18,7 +18,7 @@ connection.connect((err)=>{
 //to do sanitize queries
 
 const seedDatabase = (reviewAverage, reviewCount, image, name, price, description, thumbnail, callback) => {
-  connection.query('INSERT INTO product (customer_review_AVG, customerReviewCount, image, name, regularPrice, thumbnailImage) VALUES (?, ?, ?, ?, ?, ?)',[reviewCount, image, name, price, description, thumbnail],  (error, result) => {
+  connection.query('INSERT INTO product (customer_review_AVG, customerReviewCount, product_image, product_name, regularPrice, thumbnailImage) VALUES (?, ?, ?, ?, ?, ?)',[reviewCount, image, name, price, description, thumbnail],  (error, result) => {
       if (error) {
           console.error('error with query', error);
           callback(error, null);
