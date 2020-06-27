@@ -6,17 +6,17 @@ var app = express();
 
 var path = require('path');
 
-var bodyParser = require('body-parser');
+var PORT = process.env.PORT || 8008;
 
-var queries = require('../database/queries');
+var dbquery = require('../db/queries');
 
-app.use(express["static"](path.join(__dirname, '../dist')));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+var _require = require('http-proxy-middleware'),
+    createProxyMiddleware = _require.createProxyMiddleware;
+
+app.use(express["static"](path.join(__dirname, '../frontEnd/dist')));
+app.use(express.json());
 app.get('/products', function (req, res) {
-  queries.getProducts(function (error, result) {
+  dbquery.getProducts(function (error, result) {
     if (error) {
       console.error('error at endpoint with getting products', error);
     } else {
@@ -24,19 +24,6 @@ app.get('/products', function (req, res) {
     }
   });
 });
-var port = process.env.PORT || 8081;
-app.listen(port, function () {
-  console.log("Listening on port ".concat(port));
-}); // only used when seeding the database
-// app.get('/seed', (request, response) => {
-//     data.data.forEach((item) => {
-//         console.log(item)
-//         queries.seedDatabase(item.customerReviewCount, item.image, item.name, item.regularPrice, item.thumbnailImage, (error, result) => {
-//             if (error) {
-//                 console.error(error);
-//             } else {
-//                 response.end();
-//             }
-//         })
-//     })
-// })
+app.listen(PORT, function () {
+  console.log("server is CONNECTED on PORT:".concat(PORT));
+});
