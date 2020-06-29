@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ItemCarousel from './Components/ItemCarousel';
 import Axios from 'axios';
+import _ from 'underscore';
 
 // import data from '../../testData';
 
@@ -41,7 +42,7 @@ class App extends Component {
 
     Axios.get('/products')
       .then( res => {
-        let products = res.data;
+        let products = _.shuffle(res.data);
         this.setState({products: products}, () => this.setState({loaded: true}));
       })
       .catch( err => {
