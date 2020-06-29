@@ -10,18 +10,18 @@ class App extends Component {
     this.state = {
 
       products: [],
+      loaded: false,
     }
 
     this.seedDB = this.seedDB.bind(this);
     this.getProducts = this.getProducts.bind(this);
+    this.renderCarousel = this.renderCarousel.bind(this);
   }
 
   componentDidMount() {
-    this.getProducts()
-      .then( res => {
 
-        this.setState({products: res.data});
-      });
+    this.getProducts();
+
   }
 
   seedDB() {
@@ -42,8 +42,7 @@ class App extends Component {
     Axios.get('/products')
       .then( res => {
         let products = res.data;
-        this.setState({products: products});
-
+        this.setState({products: products}, () => this.setState({loaded: true}));
       })
       .catch( err => {
 
@@ -51,15 +50,25 @@ class App extends Component {
       })
   }
 
-  render() {
+  renderCarousel() {
 
-    return (
-      
-      <div className="mainContainer">
+    return(
+      <div>
         <ItemCarousel data={this.state.products}/>
       </div>
     )
   }
+
+  render() {
+
+      return (
+        
+        <div className="mainContainer">
+          {this.state.loaded === true ? this.renderCarousel() : null}
+        </div>
+      )
+
+    }
 }
 
 export default App;

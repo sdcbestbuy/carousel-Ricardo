@@ -1,8 +1,5 @@
 import React, {useState} from 'react';
-// import Star from './Star.jsx';
 import Rating from '@material-ui/lab/Rating';
-// import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
 const Item = (props) => {
