@@ -3,11 +3,11 @@ import React, {useState} from 'react';
 import Rating from '@material-ui/lab/Rating';
 // import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-// import StarBorderIcon from '@material-ui/icons/StarBorder';
+import StarBorderIcon from '@material-ui/icons/StarBorder';
 
 const Item = (props) => {
 
-    const [stars, setStars] = useState(props.rating);
+    const [stars, setStars] = useState(props.data.customer_review_AVG);
     console.log(stars)
     return (
 
@@ -23,10 +23,15 @@ const Item = (props) => {
                 </div>
 
                 <ul className="review">
-                    <Box component="fieldset" mb={3} borderColor="transparent">
-                        <Rating name="read-only" 
-                                value={props.data.customer_review_AVG} readOnly />
-                    </Box>
+                    <div>
+                        <Rating name="half-rating-read" 
+                                value={props.data.customer_review_AVG}
+                                precision={0.1} 
+                                size="small"
+                                emptyIcon={<StarBorderIcon fontSize="inherit" />}
+                                readOnly 
+                        />
+                    </div>
                 </ul>
 
                 <div className="price">

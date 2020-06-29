@@ -1,12 +1,12 @@
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-  host: 'aa38ugi7pcuwxd.czkwyvdb9mxc.us-east-2.rds.amazonaws.com' ||'localhost',
+  host: 'localhost',
   user: 'root',
   password: 'Unlucky1!',
   database: 'products',
   port: 3306,
 });
-
+// 'aa38ugi7pcuwxd.czkwyvdb9mxc.us-east-2.rds.amazonaws.com' ||
 connection.connect((err)=>{
   if (err){
     console.log('DB CONNECTION FAILED',err)

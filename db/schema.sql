@@ -6,7 +6,7 @@ USE products;
 
 CREATE TABLE product (
   id INT PRIMARY KEY AUTO_INCREMENT,
-  customer_review_AVG INT,
+  customer_review_AVG FLOAT,
   customerReviewCount INT,
   product_image VARCHAR(255),
   product_name VARCHAR(255),
