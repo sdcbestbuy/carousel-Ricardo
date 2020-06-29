@@ -3,7 +3,7 @@ import Star from './Star.jsx';
 
 const Item = (props) => {
 
-    const [stars, setStars] = useState(props.data.customerReviewAverage);
+    const [stars, setStars] = useState(props.data.customer_review_AVG);
 
     return (
 
@@ -19,7 +19,7 @@ const Item = (props) => {
                 </div>
 
                 <ul className="review">
-                    <Star rating={props.data.customerReviewAverage}/>
+                    <Star rating={stars}/>
                 </ul>
 
                 <div className="price">

@@ -9,7 +9,6 @@ class App extends Component {
     this.state = {
 
       products: []
-      // products: [data.data[0], data.data[1], data.data[2]]
     }
 
     this.seedDB = this.seedDB.bind(this);
