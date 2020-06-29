@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
-import Star from './Star.jsx';
+// import Star from './Star.jsx';
+import Rating from '@material-ui/lab/Rating';
+// import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+// import StarBorderIcon from '@material-ui/icons/StarBorder';
 
 const Item = (props) => {
 
-    const [stars, setStars] = useState(props.data.customer_review_AVG);
-
+    const [stars, setStars] = useState(props.rating);
+    console.log(stars)
     return (
 
         <div className="itemContainer">
@@ -19,7 +23,10 @@ const Item = (props) => {
                 </div>
 
                 <ul className="review">
-                    <Star rating={stars}/>
+                    <Box component="fieldset" mb={3} borderColor="transparent">
+                        <Rating name="read-only" 
+                                value={props.data.customer_review_AVG} readOnly />
+                    </Box>
                 </ul>
 
                 <div className="price">

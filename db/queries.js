@@ -15,8 +15,6 @@ connection.connect((err)=>{
   console.log('Connected to DB')
 });
 
-//to do sanitize queries
-
 const seedDatabase = (reviewAverage, reviewCount, image, name, price, description, thumbnail, callback) => {
   connection.query('INSERT INTO product (customer_review_AVG, customerReviewCount, product_image, product_name, regularPrice, thumbnailImage) VALUES (?, ?, ?, ?, ?, ?)',[reviewCount, image, name, price, description, thumbnail],  (error, result) => {
       if (error) {
@@ -35,7 +33,7 @@ const getProducts = (callback) => {
           callback(error, null);
           console.error('error getting products at query level', error);
       } else {
-          console.log(result)
+
           callback(null, result);
       }
   })
