@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ItemCarousel from './Components/ItemCarousel';
 import Axios from 'axios';
+
 // import data from '../../testData';
 
 class App extends Component {
@@ -8,7 +9,7 @@ class App extends Component {
     super(props);
     this.state = {
 
-      products: []
+      products: [],
     }
 
     this.seedDB = this.seedDB.bind(this);
@@ -16,7 +17,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getProducts();
+    this.getProducts()
+      .then( res => {
+
+        this.setState({products: res.data});
+      });
   }
 
   seedDB() {
@@ -38,6 +43,7 @@ class App extends Component {
       .then( res => {
         let products = res.data;
         this.setState({products: products});
+
       })
       .catch( err => {
 
