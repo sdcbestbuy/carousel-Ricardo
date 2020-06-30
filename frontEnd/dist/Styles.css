@@ -1,3 +1,7 @@
+/* font-family: 'Questrial', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sarabun', sans-serif; */
+
 #root {
 
   width: 100%;
@@ -8,7 +12,7 @@
   padding-right: 15px;
   box-sizing: border-box;
   
-  font-size: 13px;
+  font-size: 12px;
   line-height: normal;
   color: #040c13;
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
@@ -61,7 +65,7 @@ h2 {
 .xItems {
 
   font-weight: 300;
-  font-size: 14px;
+  font-size: 11px;
   box-sizing: border-box;
 }
 
@@ -92,7 +96,7 @@ h2 {
   height:1px;
   line-height:normal;
   text-size-adjust:100%;
-  width:1200px;
+  width:100%;
   margin-bottom: 15px;
   -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
@@ -390,24 +394,39 @@ svg {
   padding-left: 0;
   list-style: none;
   margin-bottom: 0;
+  font-size: 8px;
 
 }
 
-.star {
+.liDiv {
 
-  float: left;
-  box-sizing: border-box;
-  margin-right: 4px;
-  background-repeat: no-repeat;
-  display: inline-block;
+  font-size: .75em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  right: 5px;
+}
+
+.liReviews {
+
+  border-right: none;
   position: relative;
-  content: '\f005';
-  font-family: 'FontAwesome';
-  background-position: -100px -98px;
+  right: 10px;
+  list-style: none;
 
+  
+}
+
+.stars {
+  position: relative;
+  left: 0;
+  right: 10px;
+  display: inline-flex;
+  transform: scale(0.80);
 }
 
 .totalReviews {
+  float: right;
   font-size: 11px;
   color: #0457c8;
   cursor: pointer;
@@ -438,6 +457,7 @@ svg {
 .price {
   grid-area: price;
   font-size: 15px;
+  font-weight: 700;
   line-height: 18px;
 }
 
@@ -450,7 +470,19 @@ svg {
 
   grid-area: compare;
   display: flex;
+  justify-content: start;
   align-items: center;
+  color: #0046be;
+}
+
+.compareSpan {
+
+  position: relative;
+  bottom: 6.5px;
+  left: 2px; 
+  font-size: 13px;
+  font-family: Human BBY Web,Arial,Helvetica,sans-serif;
+  font-weight: 250;
   color: #0046be;
 }
 

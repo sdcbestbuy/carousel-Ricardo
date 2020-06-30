@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Rating from '@material-ui/lab/Rating';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
+import GradeOutlinedIcon from '@material-ui/icons/GradeOutlined';
+import Typography from '@material-ui/core/Typography';
 
 const Item = (props) => {
 
@@ -20,19 +22,25 @@ const Item = (props) => {
                 </div>
 
                 <ul className="review">
-                    <div>
-                        <Rating name="half-rating-read" 
-                                value={props.data.customer_review_AVG}
-                                precision={0.1} 
-                                size="small"
-                                emptyIcon={<StarBorderIcon fontSize="inherit" />}
-                                readOnly 
-                        />
-                    </div>
+
+                    <li className="liReviews">
+                        <div className="liDiv">
+                            <i className="stars">
+                                <Rating name="half-rating-read" 
+                                        value={props.data.customer_review_AVG}
+                                        precision={0.1} 
+                                        size="small"
+                                        emptyIcon={<GradeOutlinedIcon fontSize="inherit" />}
+                                        readOnly 
+                                />
+                            </i>
+                        <span className="totalReviews">{'(' + props.data.customerReviewCount + ')'}</span>
+                        </div>
+                    </li>
                 </ul>
 
                 <div className="price">
-                    <span className="itemPrice">{props.data.regularPrice}</span>
+                    <span className="itemPrice">{'$' + props.data.regularPrice}</span>
                 </div>
 
                 <div type="compare">
@@ -40,8 +48,8 @@ const Item = (props) => {
                         <input type="checkbox"></input>
                         <span></span>
                     </label>
+                    <span className="compareSpan">Compare</span>
                 </div>
-
             </div>
         </div>
     )

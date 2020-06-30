@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.compiled.js",
     "start-webpack": "webpack --watch --mode development --inline --progress",
-    "build": "babel server/server.js --out-file server/server.compiled.js"
+    "build": "babel server/server.js --out-file server/server.compiled.js",
+    "start2": "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
