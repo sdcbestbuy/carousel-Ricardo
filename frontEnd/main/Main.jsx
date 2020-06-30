@@ -17,6 +17,7 @@ class App extends Component {
     this.seedDB = this.seedDB.bind(this);
     this.getProducts = this.getProducts.bind(this);
     this.renderCarousel = this.renderCarousel.bind(this);
+    this.getId = this.getId.bind(this);
   }
 
   componentDidMount() {
@@ -51,11 +52,18 @@ class App extends Component {
       })
   }
 
+  getId(event) {
+
+    window.id = event;
+
+    console.log('Here is the window id', window.id);
+  }
+
   renderCarousel() {
 
     return(
       <div>
-        <ItemCarousel data={this.state.products}/>
+        <ItemCarousel data={this.state.products} getId={this.getId}/>
       </div>
     )
   }

@@ -46,7 +46,7 @@ const ItemCarousel = (props) => {
                         {carouselData.map((item, i) => {
                             return (
 
-                                <Item key={i} data={item} rating={item.customer_review_AVG}/>
+                                <Item key={i} data={item} rating={item.customer_review_AVG} getId={props.getId} />
                             )
                         })}
                     </ul>

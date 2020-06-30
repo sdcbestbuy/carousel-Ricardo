@@ -14,11 +14,11 @@ const Item = (props) => {
             <div className="itemBlock">
 
                 <div className="image">
-                    <img className="itemImage" src={props.data.product_image}></img>
+                    <img className="itemImage" src={props.data.product_image} onClick={() => props.getId(props.data.id)}></img>
                 </div>
 
                 <div className="name">
-                    <p className="itemName">{props.data.product_name}</p>
+                    <p className="itemName" onClick={() => props.getId(props.data.id)}>{props.data.product_name}</p>
                 </div>
 
                 <ul className="review">
