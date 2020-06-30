@@ -73,7 +73,8 @@ class App extends Component {
       return (
         
         <div className="mainContainer">
-          {this.state.loaded === true ? this.renderCarousel() : null}
+          {/* {this.state.loaded === true ? this.renderCarousel() : null} */}
+          <ItemCarousel data={this.state.products} getId={this.getId}/>
         </div>
       )
 
