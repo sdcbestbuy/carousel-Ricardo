@@ -1,21 +1,12 @@
-# Reviews_Polancich
-This will be the Reviews Module
+Technology used:
+    React
+    Hooks
 
-Structure is as Follows
+    Font Awesome
+    Google Fonts
+    Material UI
 
-          - APP.jsx 
-            - SummaryMain
-              - Customer Rating
-              - Customer Rating Visualizer
-              - Recommendation
-          
-            - PhotoHeadersList
-              - Photos
-          
-            - ReviewsList
-              - Review
-                - ReviewsNameArea
-                - ReviewCommentArea
-            
-            - Footer
-        
+    AWS S3
+    AWS Elastic Beanstalk
+    AWS RDS
+    AWS E2
