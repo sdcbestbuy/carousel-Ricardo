@@ -1,21 +1,15 @@
-/* font-family: 'Questrial', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Sarabun', sans-serif; */
+#Carousel {
 
-#root {
+  display: flexbox;
+  justify-content: center;
+}
 
-  width: 100%;
-  float: left;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  box-sizing: border-box;
-  
-  font-size: 12px;
-  line-height: normal;
-  color: #040c13;
-  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+.mainContainer {
+
+  display: flexbox;
+  justify-content: center;
+  max-width: 1200px;
+
 }
 
 .carouselWrapper {
