@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 const Item = (props) => {
 
     const [stars, setStars] = useState(props.data.customer_review_AVG);
-    console.log(stars)
+
     return (
 
         <div className="itemContainer">
