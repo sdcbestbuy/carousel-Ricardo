@@ -117,7 +117,12 @@ h2 {
 
 .carouselList {
 
-  display: block;
+  display: flex;
+
+  /* overflow-x: scroll;
+  scroll-snap-points-x: repeat(900px);
+  scroll-snap-type: mandatory; */
+
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -158,6 +163,11 @@ svg {
 
 }
 
+.nextButton:focus {
+
+  outline: 0;
+}
+
 .previousButton {
 
   background: none;
@@ -175,6 +185,11 @@ svg {
   margin-top: -25px;
   width: 50px;
   left: 0;
+}
+
+.previousButton:focus {
+
+  outline: 0;
 }
 
 .svgRight {
@@ -316,6 +331,7 @@ svg {
   box-sizing: border-box;
 
   width: 33.33333%;
+  min-width: 33.33333%;
   visibility: visible;
 
   padding: 0 0 0 15px;
