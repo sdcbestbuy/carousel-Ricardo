@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Item from './Item.jsx';
 import $ from 'jquery';
  
+
+// ! solve logic problem with the buttons working both directions when at 0 or 2
 const ItemCarousel = (props) => {
 
     // index variable for helping to control what items are currently being viewed
@@ -14,9 +16,8 @@ const ItemCarousel = (props) => {
     const [carouselData, setCarouselData] = useState(itemArray);
     // const [carouselData, setCarouselData] = useState(itemArray.slice(index, endIndex));
     const spot = [0, 1065, 2130];
-    const spot2 = [0, 1065, 2130];
     const [scroll, setScroll] = useState(spot[1]);
-    const [scroll2, setScroll2] = useState(spot2[1]);
+    
 //========================================================================
 // functions for controlling the arrow buttons on the side of the carousel
 //========================================================================
@@ -62,7 +63,7 @@ const ItemCarousel = (props) => {
         <div className="carouselWrapper">
             <div className="carouselContent">
                 <div className="carouselHeader">
-                    <h2 className="peopleViewed">People also viewed<span className="xItems">{'(' + props.data.length + ')'}</span></h2>
+                    <h2 className="peopleViewed">People also viewed<span className="xItems">{'(' + carouselData.length + ')'}</span></h2>
                 </div>
                 <div className="bottomLine"></div>
                     <button className="previousButton" onClick={() => previousItems()}>
