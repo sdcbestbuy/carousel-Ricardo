@@ -6,7 +6,9 @@ const connection = mysql.createConnection({
   database: 'products',
   port: 3306,
 });
-'aa38ugi7pcuwxd.czkwyvdb9mxc.us-east-2.rds.amazonaws.com' || 
+
+
+// 'aa38ugi7pcuwxd.czkwyvdb9mxc.us-east-2.rds.amazonaws.com' || 
 connection.connect((err)=>{
   if (err){
     console.log('DB CONNECTION FAILED',err)

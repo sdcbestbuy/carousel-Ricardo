@@ -1,6 +1,8 @@
 Technology used:
     React
     Hooks
+    Node
+    Express
 
     Font Awesome
     Google Fonts
